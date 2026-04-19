@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .menu div{
+        width: 20px; height: 2px; background-color: white; margin-top: 4px;
+        }
+        .products img{
+            width: 90%;
+        }
+        .trending div{
+            flex: 1;
+            text-align: center;
+        }
+        .trending div:first-child{
+            flex: 1.5;
+        }
+        .trending img{
+            width: 80%;
+        }
+        .mk-footer{
+        background-color: #f3f3f3;
+        margin-top: 0;
+        padding: 40px 70px 30px 70px;
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+
+    .mk-footer-services-title{
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 45px;
+    }
+
+    .mk-footer-services{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .mk-footer-services div{
+        flex: 1;
+    }
+
+    .mk-footer-services i{
+        font-size: 48px;
+        margin-bottom: 18px;
+        color: black;
+    }
+
+    .mk-footer-services p{
+        font-size: 18px;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .mk-footer-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .mk-footer-left{
+        width: 45%;
+    }
+
+    .mk-footer-location{
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 45px;
+        font-size: 20px;
+    }
+
+    .mk-footer-location div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mk-footer-location i{
+        font-size: 28px;
+    }
+
+    .mk-footer-signup-text{
+        font-size: 22px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        max-width: 620px;
+    }
+
+    .mk-footer-signup{
+        display: flex;
+        width: 640px;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .mk-footer-signup input{
+        flex: 1;
+        height: 62px;
+        border: 1px solid #9d9d9d;
+        padding: 0 18px;
+        font-size: 16px;
+        outline: none;
+        background-color: white;
+    }
+
+    .mk-footer-signup button{
+        width: 120px;
+        height: 62px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .mk-footer-social{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .mk-footer-social a{
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .mk-footer-links{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .mk-footer-column{
+        flex: 1;
+    }
+
+    .mk-footer-column h3{
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-bottom: 28px;
+    }
+
+    .mk-footer-column a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        margin-bottom: 26px;
+    }
+    @media (max-width: 480px){
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header{
+        flex-direction: column !important;
+        text-align: center;
+        gap: 6px;
+        padding: 10px !important;
+        font-size: 12px;
+    }
+
+    body > div:first-of-type{
+        height: 70vh !important;
+    }
+
+    body > div:first-of-type > div:first-child{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px !important;
+        padding-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    body > div:first-of-type > div:first-child a{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    nav{
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 16px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    nav menu{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    nav h1{
+        font-size: 28px;
+        margin: 0;
+    }
+
+    nav > div:last-child{
+        gap: 16px !important;
+        justify-content: center;
+    }
+
+    nav > div:last-child i:last-child{
+        margin-right: 0 !important;
+    }
+
+    body > div:nth-of-type(2),
+    body > div:nth-of-type(3),
+    body > div:nth-of-type(4){
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    body > div:nth-of-type(2) h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    body > div:nth-of-type(3) p{
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 20px 0;
+    }
+
+    .products div{
+        width: 100%;
+        text-align: center;
+    }
+
+    .products img{
+        width: 88%;
+    }
+
+    .products a{
+        margin-top: 10px !important;
+        font-size: 14px;
+    }
+
+    body > div:nth-of-type(6),
+    body > div:nth-of-type(8),
+    body > div:nth-of-type(9){
+        height: 70vh !important;
+        margin-top: 30px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    body > div:nth-of-type(6) h2,
+    body > div:nth-of-type(8) h2,
+    body > div:nth-of-type(9) h2{
+        font-size: 34px !important;
+        margin-bottom: 10px !important;
+    }
+
+    body > div:nth-of-type(6) p,
+    body > div:nth-of-type(8) p,
+    body > div:nth-of-type(9) p{
+        font-size: 15px !important;
+        margin-bottom: 16px !important;
+        line-height: 1.4;
+    }
+
+    body > div:nth-of-type(6) a,
+    body > div:nth-of-type(8) a,
+    body > div:nth-of-type(9) a{
+        font-size: 13px !important;
+    }
+
+    body > div:nth-of-type(6) > div,
+    body > div:nth-of-type(8) > div,
+    body > div:nth-of-type(9) > div{
+        padding-bottom: 40px !important;
+    }
+
+    [trending]{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 20px;
+        padding: 25px 10px;
+    }
+
+    [trending] > div{
+        flex: 0 0 48% !important;
+    }
+
+    [trending] > div:first-child{
+        flex: 0 0 100% !important;
+    }
+
+    [trending] h1{
+        font-size: 28px;
+        margin: 0 0 10px 0;
+    }
+
+    .trending img{
+        width: 95%;
+    }
+
+    [trending] a{
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    .mk-footer{
+        padding: 30px 20px;
+    }
+
+    .mk-footer-services-title{
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    .mk-footer-services{
+        flex-wrap: wrap;
+        gap: 30px 10px;
+        margin-bottom: 40px;
+    }
+
+    .mk-footer-services div{
+        flex: 0 0 48%;
+    }
+
+    .mk-footer-services i{
+        font-size: 34px;
+        margin-bottom: 12px;
+    }
+
+    .mk-footer-services p{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .mk-footer-bottom{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mk-footer-left,
+    .mk-footer-links{
+        width: 100%;
+    }
+
+    .mk-footer-location{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .mk-footer-location i{
+        font-size: 20px;
+    }
+
+    .mk-footer-signup-text{
+        font-size: 16px;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .mk-footer-signup{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .mk-footer-signup input{
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .mk-footer-signup button{
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .mk-footer-social{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .mk-footer-social a{
+        font-size: 20px;
+    }
+
+    .mk-footer-links{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mk-footer-column h3{
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .mk-footer-column a{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header style="display: flex; background-color: black; color: antiquewhite; justify-content: center; align-items: center; padding: 5px;">
+        TREAT MOM TO A TOUCH OF GLAMOUR.
+        <a style="color: antiquewhite;" href="#">SHOW JEWELRY</a>
+    </header>
+    <div style="background-image: url(img1.jpg);background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh;">
+        <div style="display: flex; font-size: medium; color: white;">
+            <a style="color: white; margin-left: 50px; margin-right: 5px;" href="#">MICHAEL KORS</a>
+            |
+            <a style="color: white; margin-left: 5px;" href="#">MICHAEL KORS OUTLET</a>
+        </div>
+        <nav style="display: flex; justify-content: space-between; color: white; align-items: center;">
+            <menu style="color: white; display: flex; gap: 10px; font-size: medium;">
+                <div class="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                Menu
+            </menu>
+            <h1>MICHAEL KORS</h1>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fas fa-user"></i>
+                <i style="margin-right: 50px;" class='fa fa-shopping-bag'></i>
+            </div>
+        </nav>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; color: black;">
+        <h2>Hello, Hero Handbags</h2>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: flex-start;">
+        <p>Elevate your wardrobe with one of our most beloved styles, starting with the iconic Hamilton.</p>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <a style="color: black; text-decoration: none;" href="#">SHOP NEW ARRIVALS ></a>
+    </div>
+    <div class="products" style="display: flex; ">
+        <div>
+            <img src="crossbodies.png" alt="tsunh">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">CROSSBODIES ></a>
+        </div>
+        <div>
+            <img src="shoes.png" alt="gutal">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">SHOES ></a>
+        </div>
+        <div>
+            <img src="accessories.png" alt="accessories">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none; margin-top: 25px;" href="#">ACCESSORIES ></a>
+        </div>
+        <div>
+            <img src="handbags.png" alt="handbags">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">HANDBAGS ></a>
+        </div>
+    </div>
+    <div style="
+    background-image: url(img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    ">
+        <div style="
+            color: white;
+            text-align: center;
+            padding-bottom: 80px;
+        ">
+            <h2 style="
+                font-size: 55px;
+                margin-bottom: 15px;
+                font-weight: 500;
+            ">
+                Spring Suede
+            </h2>
+
+            <p style="
+                font-size: 20px;
+                margin-bottom: 20px;
+            ">
+                A nonchalant way to elevate your look.
+            </p>
+
+            <a style="
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: bold;
+            " href="#">
+                EXPLORE SPRING SUEDE >
+            </a>
+        </div>
+    </div>
+    <div trending style="display: flex; align-items: center; width: 100%; justify-content: space-between;">
+        <div style="color: black; font: bold;">
+           <h1>Trending Now</h1>
+        </div>
+        <div>
+            <img src="violette jean.png" alt="violette jean">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">VIOLETTE JEAN</a>
+        </div>
+        <div>
+            <img src="shae ballet flat.png" alt="shae ballet flat">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">SHAE BALLET FLAT</a>
+        </div>
+        <div>
+            <img src="hamilton satchel.png" alt="hamilton satchel">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">HAMILTON SATCHEL</a>
+        </div>
+        <div>
+            <img src="linen patch blazer.png" alt="linen patch blazer">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">LINEN PATCH BLAZER</a>
+        </div>
+        <div>
+            <img src="grenada sunglasses.png" alt="grenada sunglasses">
+            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">GRENADA SUNGLASSES</a>
+        </div>
+    </div>
+     <div style="
+    background-image: url(img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    ">
+        <div style="
+            color: white;
+            text-align: center;
+            padding-bottom: 80px;
+        ">
+            <h2 style="
+                font-size: 55px;
+                margin-bottom: 15px;
+                font-weight: 500;
+            ">
+                Work It 
+            </h2>
+
+            <p style="
+                font-size: 20px;
+                margin-bottom: 20px;
+            ">
+                Sandals with undeniable "it" factor.
+            </p>
+
+            <a style="
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: bold;
+            " href="#">
+                SHOP SHOES >
+            </a>
+        </div>
+    </div>
+     <div style="
+    background-image: url(img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    ">
+        <div style="
+            color: white;
+            text-align: center;
+            padding-bottom: 80px;
+        ">
+            <h2 style="
+                font-size: 55px;
+                margin-bottom: 15px;
+                font-weight: 500;
+            ">
+                Bright Spot
+            </h2>
+
+            <p style="
+                font-size: 20px;
+                margin-bottom: 20px;
+            ">
+                It's time for a wardrobe refresh.
+            </p>
+
+            <a style="
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: bold;
+            " href="#">
+                SHOP MEN'S NEW ARRIVALS >
+            </a>
+        </div>
+    </div>
+    <footer class="mk-footer">
+        <div class="mk-footer-services-title">KORS SERVICES</div>
+
+        <div class="mk-footer-services">
+            <div>
+                <i class="fa fa-shopping-bag"></i>
+                <p>IN-STORE PICKUP</p>
+            </div>
+            <div>
+                <i class="fa fa-mobile"></i>
+                <p>REFER A FRIEND</p>
+            </div>
+            <div>
+                <i class="fa fa-gift"></i>
+                <p>GIFT WRAPPING</p>
+            </div>
+            <div>
+                <i class="fa fa-commenting-o"></i>
+                <p>SMS</p>
+            </div>
+            <div>
+                <i class="fa fa-heart-o"></i>
+                <p>PRE-LOVED</p>
+            </div>
+            <div>
+                <i class="fa fa-credit-card"></i>
+                <p>BUY NOW, PAY LATER</p>
+            </div>
+        </div>
+
+        <div class="mk-footer-bottom">
+            <div class="mk-footer-left">
+                <div class="mk-footer-location">
+                    <div>
+                        <i class="fa fa-globe"></i>
+                        <span>United States | EN $</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <span>Find a Store</span>
+                    </div>
+                </div>
+
+                <div class="mk-footer-signup-text">
+                    Sign Up for updates from Michael Kors and receive 10% off your first order.
+                </div>
+
+                <div class="mk-footer-signup">
+                    <input type="email" placeholder="Enter Your Email*" />
+                    <button>SIGN UP</button>
+                </div>
+
+                <div class="mk-footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-times"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-music"></i></a>
+                </div>
+            </div>
+
+            <div class="mk-footer-links">
+                <div class="mk-footer-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Returns & Exchanges</a>
+                    <a href="#">Shipping Terms</a>
+                    <a href="#">Warranty & Repair</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Payment Policy</a>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Kors Services</a>
+                </div>
+
+                <div class="mk-footer-column">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">Create Account</a>
+                    <a href="#">Accounts</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">KORSVIP</a>
+                    <a href="#">Give 10%, Get 10%</a>
+                </div>
+
+                <div class="mk-footer-column">
+                    <h3>COMPANY</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Supply Chain Disclosure</a>
+                    <a href="#">Impact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
