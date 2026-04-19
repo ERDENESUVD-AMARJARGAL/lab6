@@ -3,641 +3,833 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>Michael Kors Mongolia | Luxury Handbags & Shoes</title>
+    <meta name="description" content="Discover Michael Kors handbags, shoes, accessories, and new arrivals. Explore timeless luxury fashion, trending styles, and elegant essentials for every season.">
+    <meta name="keywords" content="Michael Kors, luxury handbags, shoes, accessories, fashion, designer bags, women's fashion, men's fashion">
+    <meta name="author" content="Erdka">
+    <link rel="canonical" href="https://example.com/">
+    <meta property="og:title" content="Michael Kors Mongolia | Luxury Handbags & Shoes">
+    <meta property="og:description" content="Shop Michael Kors handbags, shoes, and accessories. Discover trending luxury fashion and timeless essentials.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="img1.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #111;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img{
+            max-width: 100%;
+            display: block;
+        }
+
+        .top-banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: black;
+            color: antiquewhite;
+            padding: 8px 12px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .top-banner a{
+            color: antiquewhite;
+            text-decoration: underline;
+        }
+
+        .hero{
+            background-image: url(img1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        .hero-overlay{
+            background: rgba(0,0,0,0.15);
+            min-height: 100vh;
+        }
+
+        .brand-switch{
+            display: flex;
+            gap: 8px;
+            padding: 18px 30px;
+            font-size: 14px;
+        }
+
+        .brand-switch a{
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        .menu-wrap{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
         .menu div{
-        width: 20px; height: 2px; background-color: white; margin-top: 4px;
+            width: 22px;
+            height: 2px;
+            background-color: white;
         }
-        .products img{
-            width: 90%;
+
+        .site-title{
+            font-size: 34px;
+            font-weight: 500;
+            letter-spacing: 3px;
         }
-        .trending div{
+
+        .nav-icons{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .hero-content{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            min-height: calc(100vh - 110px);
+            padding: 40px 20px 80px;
+        }
+
+        .hero-content-inner{
+            max-width: 750px;
+        }
+
+        .hero-content p{
+            font-size: 18px;
+            margin: 14px 0 22px;
+        }
+
+        .btn-link{
+            display: inline-block;
+            padding: 12px 22px;
+            border: 1px solid white;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-link:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .intro{
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+
+        .intro h2{
+            font-size: 34px;
+            margin-bottom: 14px;
+            font-weight: 500;
+        }
+
+        .intro p{
+            max-width: 760px;
+            margin: 0 auto 20px;
+            font-size: 17px;
+            color: #333;
+        }
+
+        .text-link{
+            color: black;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .products-section{
+            padding: 30px 20px 50px;
+        }
+
+        .products{
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .products article{
             flex: 1;
             text-align: center;
         }
-        .trending div:first-child{
-            flex: 1.5;
+
+        .products img{
+            width: 100%;
         }
+
+        .products a{
+            display: inline-block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .banner-section{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .banner-content{
+            padding-bottom: 70px;
+            max-width: 760px;
+        }
+
+        .banner-content h2{
+            font-size: 55px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .banner-content p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .banner-content a{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .trending-section{
+            padding: 60px 20px;
+        }
+
+        .trending-header{
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .trending-header h2{
+            font-size: 34px;
+            font-weight: 500;
+        }
+
+        .trending{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .trending article{
+            flex: 1;
+            text-align: center;
+        }
+
         .trending img{
-            width: 80%;
+            width: 100%;
         }
+
+        .trending a{
+            display: inline-block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .seo-content{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 70px 20px;
+        }
+
+        .seo-content h2{
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .seo-content p{
+            margin-bottom: 18px;
+            font-size: 17px;
+            color: #333;
+        }
+
+        .seo-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .seo-card{
+            background: #f8f8f8;
+            padding: 24px;
+            border-radius: 10px;
+        }
+
+        .seo-card h3{
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
         .mk-footer{
-        background-color: #f3f3f3;
-        margin-top: 0;
-        padding: 40px 70px 30px 70px;
-        color: black;
-        font-family: Arial, sans-serif;
-    }
-
-    .mk-footer-services-title{
-        text-align: center;
-        font-size: 22px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        margin-bottom: 45px;
-    }
-
-    .mk-footer-services{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: center;
-        margin-bottom: 70px;
-    }
-
-    .mk-footer-services div{
-        flex: 1;
-    }
-
-    .mk-footer-services i{
-        font-size: 48px;
-        margin-bottom: 18px;
-        color: black;
-    }
-
-    .mk-footer-services p{
-        font-size: 18px;
-        margin: 0;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-
-    .mk-footer-bottom{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 60px;
-    }
-
-    .mk-footer-left{
-        width: 45%;
-    }
-
-    .mk-footer-location{
-        display: flex;
-        align-items: center;
-        gap: 35px;
-        margin-bottom: 45px;
-        font-size: 20px;
-    }
-
-    .mk-footer-location div{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .mk-footer-location i{
-        font-size: 28px;
-    }
-
-    .mk-footer-signup-text{
-        font-size: 22px;
-        line-height: 1.3;
-        margin-bottom: 20px;
-        max-width: 620px;
-    }
-
-    .mk-footer-signup{
-        display: flex;
-        width: 640px;
-        max-width: 100%;
-        margin-bottom: 40px;
-    }
-
-    .mk-footer-signup input{
-        flex: 1;
-        height: 62px;
-        border: 1px solid #9d9d9d;
-        padding: 0 18px;
-        font-size: 16px;
-        outline: none;
-        background-color: white;
-    }
-
-    .mk-footer-signup button{
-        width: 120px;
-        height: 62px;
-        border: none;
-        background-color: black;
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        cursor: pointer;
-    }
-
-    .mk-footer-social{
-        display: flex;
-        align-items: center;
-        gap: 28px;
-    }
-
-    .mk-footer-social a{
-        color: black;
-        text-decoration: none;
-        font-size: 22px;
-    }
-
-    .mk-footer-links{
-        width: 55%;
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    .mk-footer-column{
-        flex: 1;
-    }
-
-    .mk-footer-column h3{
-        font-size: 16px;
-        letter-spacing: 2px;
-        margin-bottom: 28px;
-    }
-
-    .mk-footer-column a{
-        display: block;
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        margin-bottom: 26px;
-    }
-    @media (max-width: 480px){
-    body{
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    header{
-        flex-direction: column !important;
-        text-align: center;
-        gap: 6px;
-        padding: 10px !important;
-        font-size: 12px;
-    }
-
-    body > div:first-of-type{
-        height: 70vh !important;
-    }
-
-    body > div:first-of-type > div:first-child{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 12px !important;
-        padding-top: 10px;
-        flex-wrap: wrap;
-    }
-
-    body > div:first-of-type > div:first-child a{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    nav{
-        flex-direction: column;
-        justify-content: center !important;
-        gap: 16px;
-        padding: 20px 10px;
-        text-align: center;
-    }
-
-    nav menu{
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-    }
-
-    nav h1{
-        font-size: 28px;
-        margin: 0;
-    }
-
-    nav > div:last-child{
-        gap: 16px !important;
-        justify-content: center;
-    }
-
-    nav > div:last-child i:last-child{
-        margin-right: 0 !important;
-    }
-
-    body > div:nth-of-type(2),
-    body > div:nth-of-type(3),
-    body > div:nth-of-type(4){
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: center;
-    }
-
-    body > div:nth-of-type(2) h2{
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    body > div:nth-of-type(3) p{
-        font-size: 14px;
-        line-height: 1.5;
-        margin-top: 0;
-    }
-
-    .products{
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding: 20px 0;
-    }
-
-    .products div{
-        width: 100%;
-        text-align: center;
-    }
-
-    .products img{
-        width: 88%;
-    }
-
-    .products a{
-        margin-top: 10px !important;
-        font-size: 14px;
-    }
-
-    body > div:nth-of-type(6),
-    body > div:nth-of-type(8),
-    body > div:nth-of-type(9){
-        height: 70vh !important;
-        margin-top: 30px !important;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    body > div:nth-of-type(6) h2,
-    body > div:nth-of-type(8) h2,
-    body > div:nth-of-type(9) h2{
-        font-size: 34px !important;
-        margin-bottom: 10px !important;
-    }
-
-    body > div:nth-of-type(6) p,
-    body > div:nth-of-type(8) p,
-    body > div:nth-of-type(9) p{
-        font-size: 15px !important;
-        margin-bottom: 16px !important;
-        line-height: 1.4;
-    }
-
-    body > div:nth-of-type(6) a,
-    body > div:nth-of-type(8) a,
-    body > div:nth-of-type(9) a{
-        font-size: 13px !important;
-    }
-
-    body > div:nth-of-type(6) > div,
-    body > div:nth-of-type(8) > div,
-    body > div:nth-of-type(9) > div{
-        padding-bottom: 40px !important;
-    }
-
-    [trending]{
-        flex-wrap: wrap;
-        justify-content: center !important;
-        gap: 20px;
-        padding: 25px 10px;
-    }
-
-    [trending] > div{
-        flex: 0 0 48% !important;
-    }
-
-    [trending] > div:first-child{
-        flex: 0 0 100% !important;
-    }
-
-    [trending] h1{
-        font-size: 28px;
-        margin: 0 0 10px 0;
-    }
-
-    .trending img{
-        width: 95%;
-    }
-
-    [trending] a{
-        font-size: 13px;
-        margin-top: 8px;
-    }
-
-    .mk-footer{
-        padding: 30px 20px;
-    }
-
-    .mk-footer-services-title{
-        font-size: 18px;
-        letter-spacing: 2px;
-        margin-bottom: 30px;
-    }
-
-    .mk-footer-services{
-        flex-wrap: wrap;
-        gap: 30px 10px;
-        margin-bottom: 40px;
-    }
-
-    .mk-footer-services div{
-        flex: 0 0 48%;
-    }
-
-    .mk-footer-services i{
-        font-size: 34px;
-        margin-bottom: 12px;
-    }
-
-    .mk-footer-services p{
-        font-size: 14px;
-        line-height: 1.4;
-    }
-
-    .mk-footer-bottom{
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .mk-footer-left,
-    .mk-footer-links{
-        width: 100%;
-    }
-
-    .mk-footer-location{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-        margin-bottom: 30px;
-        font-size: 16px;
-    }
-
-    .mk-footer-location i{
-        font-size: 20px;
-    }
-
-    .mk-footer-signup-text{
-        font-size: 16px;
-        max-width: 100%;
-        margin-bottom: 16px;
-    }
-
-    .mk-footer-signup{
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 30px;
-    }
-
-    .mk-footer-signup input{
-        width: 100%;
-        height: 50px;
-        font-size: 14px;
-    }
-
-    .mk-footer-signup button{
-        width: 100%;
-        height: 50px;
-        font-size: 14px;
-    }
-
-    .mk-footer-social{
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .mk-footer-social a{
-        font-size: 20px;
-    }
-
-    .mk-footer-links{
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .mk-footer-column h3{
-        font-size: 14px;
-        margin-bottom: 18px;
-    }
-
-    .mk-footer-column a{
-        font-size: 14px;
-        margin-bottom: 16px;
-    }
-}
+            background-color: #f3f3f3;
+            margin-top: 0;
+            padding: 40px 70px 30px 70px;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .mk-footer-services-title{
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 45px;
+        }
+
+        .mk-footer-services{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: center;
+            margin-bottom: 70px;
+            gap: 20px;
+        }
+
+        .mk-footer-services div{
+            flex: 1;
+        }
+
+        .mk-footer-services i{
+            font-size: 48px;
+            margin-bottom: 18px;
+            color: black;
+        }
+
+        .mk-footer-services p{
+            font-size: 18px;
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .mk-footer-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .mk-footer-left{
+            width: 45%;
+        }
+
+        .mk-footer-location{
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            margin-bottom: 45px;
+            font-size: 20px;
+        }
+
+        .mk-footer-location div{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mk-footer-location i{
+            font-size: 28px;
+        }
+
+        .mk-footer-signup-text{
+            font-size: 22px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            max-width: 620px;
+        }
+
+        .mk-footer-signup{
+            display: flex;
+            width: 640px;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .mk-footer-signup input{
+            flex: 1;
+            height: 62px;
+            border: 1px solid #9d9d9d;
+            padding: 0 18px;
+            font-size: 16px;
+            outline: none;
+            background-color: white;
+        }
+
+        .mk-footer-signup button{
+            width: 120px;
+            height: 62px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .mk-footer-social{
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .mk-footer-social a{
+            color: black;
+            font-size: 22px;
+        }
+
+        .mk-footer-links{
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .mk-footer-column{
+            flex: 1;
+        }
+
+        .mk-footer-column h3{
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 28px;
+        }
+
+        .mk-footer-column a{
+            display: block;
+            color: black;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .mk-footer-column a:hover,
+        .products a:hover,
+        .trending a:hover,
+        .text-link:hover{
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px){
+            .products,
+            .trending,
+            .seo-grid,
+            .mk-footer-bottom{
+                flex-direction: column;
+                display: flex;
+            }
+
+            .mk-footer-left,
+            .mk-footer-links{
+                width: 100%;
+            }
+
+            .mk-footer-links{
+                flex-direction: column;
+            }
+
+            .mk-footer-services{
+                flex-wrap: wrap;
+            }
+
+            .mk-footer-services div{
+                flex: 0 0 30%;
+            }
+        }
+
+        @media (max-width: 480px){
+            .top-banner{
+                flex-direction: column;
+                font-size: 12px;
+            }
+
+            .brand-switch{
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 12px 16px;
+                text-align: center;
+            }
+
+            nav{
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+                text-align: center;
+            }
+
+            .site-title{
+                font-size: 28px;
+            }
+
+            .hero-content{
+                padding: 30px 14px 50px;
+            }
+
+            .hero-content p{
+                font-size: 15px;
+            }
+
+            .intro{
+                padding: 40px 16px 10px;
+            }
+
+            .intro h2,
+            .trending-header h2,
+            .seo-content h2{
+                font-size: 28px;
+            }
+
+            .products-section,
+            .trending-section,
+            .seo-content{
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .banner-section{
+                min-height: 70vh;
+            }
+
+            .banner-content{
+                padding-bottom: 40px;
+            }
+
+            .banner-content h2{
+                font-size: 34px;
+            }
+
+            .banner-content p{
+                font-size: 15px;
+            }
+
+            .mk-footer{
+                padding: 30px 20px;
+            }
+
+            .mk-footer-services-title{
+                font-size: 18px;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+
+            .mk-footer-services{
+                gap: 30px 10px;
+                margin-bottom: 40px;
+            }
+
+            .mk-footer-services div{
+                flex: 0 0 48%;
+            }
+
+            .mk-footer-services i{
+                font-size: 34px;
+                margin-bottom: 12px;
+            }
+
+            .mk-footer-services p{
+                font-size: 14px;
+                line-height: 1.4;
+            }
+
+            .mk-footer-bottom{
+                gap: 40px;
+            }
+
+            .mk-footer-location{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+                margin-bottom: 30px;
+                font-size: 16px;
+            }
+
+            .mk-footer-location i{
+                font-size: 20px;
+            }
+
+            .mk-footer-signup-text{
+                font-size: 16px;
+                max-width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .mk-footer-signup{
+                width: 100%;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 30px;
+            }
+
+            .mk-footer-signup input,
+            .mk-footer-signup button{
+                width: 100%;
+                height: 50px;
+                font-size: 14px;
+            }
+
+            .mk-footer-social{
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .mk-footer-social a{
+                font-size: 20px;
+            }
+
+            .mk-footer-column h3{
+                font-size: 14px;
+                margin-bottom: 18px;
+            }
+
+            .mk-footer-column a{
+                font-size: 14px;
+                margin-bottom: 16px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header style="display: flex; background-color: black; color: antiquewhite; justify-content: center; align-items: center; padding: 5px;">
-        TREAT MOM TO A TOUCH OF GLAMOUR.
-        <a style="color: antiquewhite;" href="#">SHOW JEWELRY</a>
+
+    <header class="top-banner">
+        <span>TREAT MOM TO A TOUCH OF GLAMOUR.</span>
+        <a href="shop-jewelry.html">SHOP JEWELRY</a>
     </header>
-    <div style="background-image: url(img1.jpg);background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh;">
-        <div style="display: flex; font-size: medium; color: white;">
-            <a style="color: white; margin-left: 50px; margin-right: 5px;" href="#">MICHAEL KORS</a>
-            |
-            <a style="color: white; margin-left: 5px;" href="#">MICHAEL KORS OUTLET</a>
-        </div>
-        <nav style="display: flex; justify-content: space-between; color: white; align-items: center;">
-            <menu style="color: white; display: flex; gap: 10px; font-size: medium;">
-                <div class="menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                Menu
-            </menu>
-            <h1>MICHAEL KORS</h1>
-            <div style="display: flex; gap: 20px; align-items: center;">
-                <i class="fa fa-search"></i>
-                <i class="fa fa-heart"></i>
-                <i class="fas fa-user"></i>
-                <i style="margin-right: 50px;" class='fa fa-shopping-bag'></i>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="brand-switch">
+                <a href="index.html">MICHAEL KORS</a>
+                <span>|</span>
+                <a href="outlet.html">MICHAEL KORS OUTLET</a>
             </div>
-        </nav>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center; color: black;">
+
+            <nav>
+                <div class="menu-wrap">
+                    <div class="menu" aria-label="Open menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span>Menu</span>
+                </div>
+
+                <h1 class="site-title">MICHAEL KORS</h1>
+
+                <div class="nav-icons">
+                    <a href="search.html" aria-label="Search"><i class="fa fa-search"></i></a>
+                    <a href="wishlist.html" aria-label="Wishlist"><i class="fa fa-heart"></i></a>
+                    <a href="account.html" aria-label="Account"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" aria-label="Shopping bag"><i class="fa fa-shopping-bag"></i></a>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-content-inner">
+                    <p>Discover luxury fashion designed for modern lifestyles, from iconic handbags to statement accessories and sophisticated seasonal essentials.</p>
+                    <a class="btn-link" href="new-arrivals.html">SHOP NEW ARRIVALS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
         <h2>Hello, Hero Handbags</h2>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: flex-start;">
-        <p>Elevate your wardrobe with one of our most beloved styles, starting with the iconic Hamilton.</p>
-    </div>
-    <div style="display: flex; justify-content: center;">
-        <a style="color: black; text-decoration: none;" href="#">SHOP NEW ARRIVALS ></a>
-    </div>
-    <div class="products" style="display: flex; ">
-        <div>
-            <img src="crossbodies.png" alt="tsunh">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">CROSSBODIES ></a>
-        </div>
-        <div>
-            <img src="shoes.png" alt="gutal">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">SHOES ></a>
-        </div>
-        <div>
-            <img src="accessories.png" alt="accessories">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none; margin-top: 25px;" href="#">ACCESSORIES ></a>
-        </div>
-        <div>
-            <img src="handbags.png" alt="handbags">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">HANDBAGS ></a>
-        </div>
-    </div>
-    <div style="
-    background-image: url(img2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    ">
-        <div style="
-            color: white;
-            text-align: center;
-            padding-bottom: 80px;
-        ">
-            <h2 style="
-                font-size: 55px;
-                margin-bottom: 15px;
-                font-weight: 500;
-            ">
-                Spring Suede
-            </h2>
+        <p>
+            Elevate your wardrobe with one of our most beloved styles, starting with the iconic Hamilton.
+            Explore refined silhouettes, polished finishes, and premium details that bring timeless luxury
+            into your everyday collection.
+        </p>
+        <a class="text-link" href="new-arrivals.html">SHOP NEW ARRIVALS &gt;</a>
+    </section>
 
-            <p style="
-                font-size: 20px;
-                margin-bottom: 20px;
-            ">
-                A nonchalant way to elevate your look.
-            </p>
+    <section class="products-section">
+        <div class="products">
+            <article>
+                <img src="crossbodies.png" alt="Michael Kors crossbody bags collection">
+                <a href="crossbodies.html">CROSSBODIES &gt;</a>
+            </article>
 
-            <a style="
-                color: white;
-                text-decoration: none;
-                font-size: 15px;
-                font-weight: bold;
-            " href="#">
-                EXPLORE SPRING SUEDE >
-            </a>
-        </div>
-    </div>
-    <div trending style="display: flex; align-items: center; width: 100%; justify-content: space-between;">
-        <div style="color: black; font: bold;">
-           <h1>Trending Now</h1>
-        </div>
-        <div>
-            <img src="violette jean.png" alt="violette jean">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">VIOLETTE JEAN</a>
-        </div>
-        <div>
-            <img src="shae ballet flat.png" alt="shae ballet flat">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">SHAE BALLET FLAT</a>
-        </div>
-        <div>
-            <img src="hamilton satchel.png" alt="hamilton satchel">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">HAMILTON SATCHEL</a>
-        </div>
-        <div>
-            <img src="linen patch blazer.png" alt="linen patch blazer">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">LINEN PATCH BLAZER</a>
-        </div>
-        <div>
-            <img src="grenada sunglasses.png" alt="grenada sunglasses">
-            <a style="display: flex; justify-content: center; color: black; text-decoration: none;" href="#">GRENADA SUNGLASSES</a>
-        </div>
-    </div>
-     <div style="
-    background-image: url(img3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    ">
-        <div style="
-            color: white;
-            text-align: center;
-            padding-bottom: 80px;
-        ">
-            <h2 style="
-                font-size: 55px;
-                margin-bottom: 15px;
-                font-weight: 500;
-            ">
-                Work It 
-            </h2>
+            <article>
+                <img src="shoes.png" alt="Michael Kors luxury shoes collection">
+                <a href="shoes.html">SHOES &gt;</a>
+            </article>
 
-            <p style="
-                font-size: 20px;
-                margin-bottom: 20px;
-            ">
-                Sandals with undeniable "it" factor.
-            </p>
+            <article>
+                <img src="accessories.png" alt="Michael Kors fashion accessories collection">
+                <a href="accessories.html">ACCESSORIES &gt;</a>
+            </article>
 
-            <a style="
-                color: white;
-                text-decoration: none;
-                font-size: 15px;
-                font-weight: bold;
-            " href="#">
-                SHOP SHOES >
-            </a>
+            <article>
+                <img src="handbags.png" alt="Michael Kors designer handbags collection">
+                <a href="handbags.html">HANDBAGS &gt;</a>
+            </article>
         </div>
-    </div>
-     <div style="
-    background-image: url(img4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    ">
-        <div style="
-            color: white;
-            text-align: center;
-            padding-bottom: 80px;
-        ">
-            <h2 style="
-                font-size: 55px;
-                margin-bottom: 15px;
-                font-weight: 500;
-            ">
-                Bright Spot
-            </h2>
+    </section>
 
-            <p style="
-                font-size: 20px;
-                margin-bottom: 20px;
-            ">
-                It's time for a wardrobe refresh.
-            </p>
-
-            <a style="
-                color: white;
-                text-decoration: none;
-                font-size: 15px;
-                font-weight: bold;
-            " href="#">
-                SHOP MEN'S NEW ARRIVALS >
-            </a>
+    <section class="banner-section" style="background-image: url(img2.jpg);">
+        <div class="banner-content">
+            <h2>Spring Suede</h2>
+            <p>A nonchalant way to elevate your look with effortless texture, elegance, and everyday versatility.</p>
+            <a href="spring-suede.html">EXPLORE SPRING SUEDE &gt;</a>
         </div>
-    </div>
+    </section>
+
+    <section class="trending-section">
+        <div class="trending-header">
+            <h2>Trending Now</h2>
+        </div>
+
+        <div class="trending">
+            <article>
+                <img src="violette jean.png" alt="Violette Jean fashion product">
+                <a href="violette-jean.html">VIOLETTE JEAN</a>
+            </article>
+
+            <article>
+                <img src="shae ballet flat.png" alt="Shae Ballet Flat designer shoes">
+                <a href="shae-ballet-flat.html">SHAE BALLET FLAT</a>
+            </article>
+
+            <article>
+                <img src="hamilton satchel.png" alt="Hamilton Satchel luxury handbag">
+                <a href="hamilton-satchel.html">HAMILTON SATCHEL</a>
+            </article>
+
+            <article>
+                <img src="linen patch blazer.png" alt="Linen Patch Blazer fashion apparel">
+                <a href="linen-patch-blazer.html">LINEN PATCH BLAZER</a>
+            </article>
+
+            <article>
+                <img src="grenada sunglasses.png" alt="Grenada sunglasses accessory">
+                <a href="grenada-sunglasses.html">GRENADA SUNGLASSES</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="banner-section" style="background-image: url(img3.jpg);">
+        <div class="banner-content">
+            <h2>Work It</h2>
+            <p>Sandals with undeniable style, modern polish, and a silhouette that makes every outfit stand out.</p>
+            <a href="shop-shoes.html">SHOP SHOES &gt;</a>
+        </div>
+    </section>
+
+    <section class="banner-section" style="background-image: url(img4.jpg); margin-top: 0;">
+        <div class="banner-content">
+            <h2>Bright Spot</h2>
+            <p>Refresh your wardrobe with confident new arrivals crafted for comfort, sophistication, and everyday luxury.</p>
+            <a href="mens-new-arrivals.html">SHOP MEN'S NEW ARRIVALS &gt;</a>
+        </div>
+    </section>
+
+    <section class="seo-content">
+        <h2>About Michael Kors Luxury Fashion</h2>
+        <p>
+            Michael Kors is globally recognized for creating luxury fashion that blends timeless elegance with modern style.
+            From signature handbags and versatile shoes to polished accessories and seasonal ready-to-wear pieces, the brand
+            is known for premium quality, refined details, and fashion-forward design. Every collection is created to help
+            people express confidence, sophistication, and individuality in everyday life.
+        </p>
+        <p>
+            Whether you are searching for an iconic crossbody bag, elegant heels, stylish sunglasses, or standout essentials
+            for work and travel, Michael Kors offers pieces that combine beauty and practicality. The collections are crafted
+            to move effortlessly between casual daytime looks and elevated evening outfits, making them a smart choice for
+            anyone who values luxury with real versatility.
+        </p>
+        <p>
+            This page highlights some of the most loved categories including handbags, accessories, footwear, and trending
+            seasonal fashion. It is designed to help shoppers discover new arrivals, explore popular styles, and find wardrobe
+            staples that remain stylish year after year. With thoughtful craftsmanship and a strong sense of modern glamour,
+            Michael Kors continues to be a go-to destination for luxury fashion enthusiasts around the world.
+        </p>
+
+        <div class="seo-grid">
+            <div class="seo-card">
+                <h3>Designer Handbags</h3>
+                <p>
+                    Explore structured satchels, versatile crossbodies, and classic shoulder bags designed for both everyday use
+                    and special occasions.
+                </p>
+            </div>
+
+            <div class="seo-card">
+                <h3>Luxury Shoes</h3>
+                <p>
+                    Shop modern sandals, flats, and elevated footwear that combine comfort, style, and high-end design.
+                </p>
+            </div>
+
+            <div class="seo-card">
+                <h3>Accessories & Essentials</h3>
+                <p>
+                    Complete every look with fashion accessories that bring polish, personality, and refined finishing touches.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <footer class="mk-footer">
         <div class="mk-footer-services-title">KORS SERVICES</div>
 
@@ -655,11 +847,11 @@
                 <p>GIFT WRAPPING</p>
             </div>
             <div>
-                <i class="fa fa-commenting-o"></i>
+                <i class="fa fa-commenting"></i>
                 <p>SMS</p>
             </div>
             <div>
-                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-heart"></i>
                 <p>PRE-LOVED</p>
             </div>
             <div>
@@ -676,62 +868,63 @@
                         <span>United States | EN $</span>
                     </div>
                     <div>
-                        <i class="fa fa-map-marker"></i>
+                        <i class="fa fa-map-marker-alt"></i>
                         <span>Find a Store</span>
                     </div>
                 </div>
 
                 <div class="mk-footer-signup-text">
-                    Sign Up for updates from Michael Kors and receive 10% off your first order.
+                    Sign up for updates from Michael Kors and receive 10% off your first order.
                 </div>
 
-                <div class="mk-footer-signup">
-                    <input type="email" placeholder="Enter Your Email*" />
-                    <button>SIGN UP</button>
-                </div>
+                <form class="mk-footer-signup" action="subscribe.html" method="post">
+                    <input type="email" name="email" placeholder="Enter Your Email*" aria-label="Email address" required>
+                    <button type="submit">SIGN UP</button>
+                </form>
 
                 <div class="mk-footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-times"></i></a>
-                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-music"></i></a>
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://pinterest.com" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
 
             <div class="mk-footer-links">
                 <div class="mk-footer-column">
                     <h3>CUSTOMER SERVICE</h3>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Returns & Exchanges</a>
-                    <a href="#">Shipping Terms</a>
-                    <a href="#">Warranty & Repair</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Payment Policy</a>
-                    <a href="#">Gift Cards</a>
-                    <a href="#">Kors Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="returns-exchanges.html">Returns & Exchanges</a>
+                    <a href="shipping-terms.html">Shipping Terms</a>
+                    <a href="warranty-repair.html">Warranty & Repair</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="payment-policy.html">Payment Policy</a>
+                    <a href="gift-cards.html">Gift Cards</a>
+                    <a href="kors-services.html">Kors Services</a>
                 </div>
 
                 <div class="mk-footer-column">
                     <h3>MY ACCOUNT</h3>
-                    <a href="#">Create Account</a>
-                    <a href="#">Accounts</a>
-                    <a href="#">Track My Order</a>
-                    <a href="#">KORSVIP</a>
-                    <a href="#">Give 10%, Get 10%</a>
+                    <a href="create-account.html">Create Account</a>
+                    <a href="account.html">Accounts</a>
+                    <a href="track-order.html">Track My Order</a>
+                    <a href="korsvip.html">KORSVIP</a>
+                    <a href="refer-friend.html">Give 10%, Get 10%</a>
                 </div>
 
                 <div class="mk-footer-column">
                     <h3>COMPANY</h3>
-                    <a href="#">About Us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Supply Chain Disclosure</a>
-                    <a href="#">Impact</a>
+                    <a href="about.html">About Us</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="investor-relations.html">Investor Relations</a>
+                    <a href="supply-chain-disclosure.html">Supply Chain Disclosure</a>
+                    <a href="impact.html">Impact</a>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 </html>
